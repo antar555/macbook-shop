@@ -20,8 +20,13 @@
                 <div>
                     <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
                     <br>
-                     <p class="fw-bold">Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to select at checkout for certain Apple products purchased at Apple Store locations, apple.com, the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. Rates as of April 1, 2020. If you choose the pay in full or one time payment option for an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card.</p>
-                     
+                    <p class="fw-bold">Apple Card Monthly Installments (ACMI) is a 0% APR payment option available to
+                        select at checkout for certain Apple products purchased at Apple Store locations, apple.com, the
+                        Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit
+                        limit. Rates as of April 1, 2020. If you choose the pay in full or one time payment option for
+                        an ACMI eligible purchase instead of choosing ACMI as the payment option at checkout, that
+                        purchase will be subject to the variable APR assigned to your Apple Card.</p>
+
                 </div>
                 <br>
 
@@ -59,12 +64,14 @@
 
                     </div>
                     <div>
-                        <h5 class="mx-5">$<span>1299</span></h5>
-                        <h5 class="mx-5">$<span>0</span></h5>
-                        <h5 class="mx-5">$<span>0</span></h5>
-                        <h5 class="mx-5">$<span>0</span></h5>
-                         <br>
-                        <h3 class="mx-5">$<span>1299</span></h3>
+                        <h5 class="mx-5">$<span id="base-price">1299</span></h5>
+
+                        <h5 class="mx-5">$<span id="extra-memory">0</span></h5>
+
+                        <h5 class="mx-5">$<span id="extra-storage">0</span></h5>
+                        <h5 class="mx-5">$<span id="delivery">0</span></h5>
+                        <br>
+                        <h3 class="mx-5">$<span id="total-price">1299</span></h3>
 
                     </div>
 
@@ -73,10 +80,10 @@
                 <br>
 
                 <div class="d-flex">
-                    <input type="text" class="form-control w-25" id="" placeholder="promo code">
-                    <button type="button" class="btn btn-danger mx-3">Apply</button>
+                    <input type="text" class="form-control w-25" id="coupon" placeholder="promo code">
+                    <button id="apply-button" type="button" class="btn btn-danger mx-3">Apply</button>
                 </div>
-                
+
 
 
 
@@ -85,8 +92,8 @@
 
 
             </div>
-            
-            
+
+
 
 
 
@@ -96,15 +103,16 @@
 
         </div>
         <hr>
-        <h1 class="text-center">Total: $<span>1299</span></h1>
-       
-        
+        <h1 class="text-center">Total: $<span id="total-grand">1299</span></h1>
+
+
 
     </header>
 
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
