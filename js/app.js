@@ -148,11 +148,14 @@ document.getElementById('apply-button').addEventListener('click',function(){
         totalGrand.innerText=grandTotal;
        
     }
-    else if(couponCode.value==' '){
+    else if(couponCode.value==''){
         const grandTotal= total;
         const totalGrand= document.getElementById('total-grand');
         totalGrand.innerText=grandTotal;
 
+    }
+    else if(couponCode.value!='stevekaku'){
+        alert('you have entered wrong number');
     }
         
     
